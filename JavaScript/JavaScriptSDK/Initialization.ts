@@ -157,6 +157,7 @@ module Microsoft.ApplicationInsights {
             config.emitLineDelimitedJson = Util.stringToBoolOrDefault(config.emitLineDelimitedJson);
             config.diagnosticLogInterval = config.diagnosticLogInterval || 10000;
             config.autoTrackPageVisitTime = Util.stringToBoolOrDefault(config.autoTrackPageVisitTime);
+            config.singlePageApp = ApplicationInsights.Util.stringToBoolOrDefault(config.singlePageApp);
 
             if (isNaN(config.samplingPercentage) || config.samplingPercentage <= 0 || config.samplingPercentage >= 100) {
                 config.samplingPercentage = 100;

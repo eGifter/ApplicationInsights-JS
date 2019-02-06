@@ -36,5 +36,6 @@
         isBrowserLinkTrackingEnabled?: boolean;
         appId?: string;
         enableCorsCorrelation?: boolean;
+        singlePageApp: boolean;
     }
 }
